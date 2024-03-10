@@ -156,7 +156,6 @@ button.calculate:hover {
 }
 
 .comment {
-  display: none;
   border: dashed 1px;
   border-radius: 7px;
   padding: 5px;

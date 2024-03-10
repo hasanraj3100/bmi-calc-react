@@ -37,7 +37,7 @@ function App() {
       {/* <header className="App-header"></header> */}
       <div class="container">
         <div class="box">
-          <h1>Hello</h1>
+          <h1>BMI Calculator</h1>
           <CalculatorForm calculateBMI={calculateBMI} />
           <Result bmi={bmi} bmiResult={result}></Result>
         </div>

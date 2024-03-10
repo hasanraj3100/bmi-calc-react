@@ -5,17 +5,14 @@ function Result({ bmi, bmiResult }) {
     <div className="result">
       <p>Your BMI is</p>
       <div id="result">{!bmi ? "00.00" : bmi}</div>
-      <Comment bmiResult={bmiResult}></Comment>
+      {bmiResult ? (
+        <p className="comment">
+          You are <span id="comment">{bmiResult}</span>
+        </p>
+      ) : (
+        ""
+      )}
     </div>
-  );
-}
-
-function Comment({ bmiResult }) {
-  return (
-    <p className="comment">
-      {/* Your are <span id="comment">{bmiResult}</span> */}
-      heelo
-    </p>
   );
 }
 
